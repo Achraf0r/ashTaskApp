@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ashTaskApp - Beautiful Task Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a0806 0%, #1a1512 100%);
+            color: #e8d4c0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 40px;
+        }
+
+        h1 {
+            font-size: 56px;
+            color: #d4a574;
+            margin-bottom: 20px;
+            font-weight: 300;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 24px;
+            color: #b89164;
+            margin-bottom: 50px;
+        }
+
+        .download-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #F0330E 0%, #C82909 100%);
+            color: white;
+            padding: 20px 60px;
+            font-size: 22px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 10px 30px rgba(240, 51, 14, 0.3);
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(240, 51, 14, 0.4);
+            background: linear-gradient(135deg, #ff3d15 0%, #d42e0c 100%);
+        }
+
+        .version {
+            margin-top: 15px;
+            color: #8b7255;
+            font-size: 14px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 60px 20px;
+        }
+
+        .feature-card {
+            background: rgba(26, 19, 16, 0.8);
+            border: 1px solid #2d2118;
+            border-radius: 16px;
+            padding: 30px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #cc785c;
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .feature-title {
+            font-size: 22px;
+            color: #d4a574;
+            margin-bottom: 10px;
+        }
+
+        .feature-desc {
+            color: #b89164;
+            font-size: 16px;
+        }
+
+        .screenshot-section {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .screenshot-placeholder {
+            background: rgba(26, 19, 16, 0.6);
+            border: 2px dashed #3d3028;
+            border-radius: 16px;
+            padding: 100px;
+            margin: 30px auto;
+            max-width: 800px;
+            color: #6b5a47;
+        }
+
+        .requirements {
+            background: rgba(26, 19, 16, 0.6);
+            border: 1px solid #2d2118;
+            border-radius: 16px;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+
+        .requirements h3 {
+            color: #d4a574;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .requirements ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .requirements li {
+            padding: 10px 0;
+            color: #b89164;
+            font-size: 16px;
+        }
+
+        .requirements li:before {
+            content: "✓ ";
+            color: #F0330E;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6b5a47;
+            border-top: 1px solid #2d2118;
+            margin-top: 60px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #d4a574;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ashTaskApp</h1>
+            <p class="tagline">Manage your tasks beautifully</p>
+        </header>
+
+        <div class="download-section">
+            <a href="https://drive.google.com/uc?export=download&id=1OWoQf7q92vCy0S-mqo5d-DJ3TpvZWnjk" class="download-btn">
+                Download for Windows
+            </a>
+            <p class="version">Version 1.0 • Windows 10/11 • 152 MB</p>
+        </div>
+
+        <h2>Features</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">⏰</div>
+                <h3 class="feature-title">Live Clock</h3>
+                <p class="feature-desc">Real-time clock display with AM/PM format keeps you on schedule</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3 class="feature-title">Dark Theme</h3>
+                <p class="feature-desc">Beautiful warm dark interface that's easy on your eyes</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3 class="feature-title">Due Dates</h3>
+                <p class="feature-desc">Easy calendar picker to set deadlines for your tasks</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">✓</div>
+                <h3 class="feature-title">Task Completion</h3>
+                <p class="feature-desc">Mark tasks as complete with smooth checkbox interactions</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🗑️</div>
+                <h3 class="feature-title">Quick Delete</h3>
+                <p class="feature-desc">Remove completed or unwanted tasks instantly</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Fast & Light</h3>
+                <p class="feature-desc">Native Qt application with smooth performance</p>
+            </div>
+        </div>
+
+        <div class="screenshot-section">
+            <h2>Preview</h2>
+            <div class="screenshot-placeholder">
+                📸 Add your app screenshot here
+            </div>
+        </div>
+
+        <div class="requirements">
+            <h3>System Requirements</h3>
+            <ul>
+                <li>Windows 10 or Windows 11 (64-bit)</li>
+                <li>4 GB RAM minimum</li>
+                <li>50 MB free disk space</li>
+                <li>Display: 1280x720 or higher</li>
+            </ul>
+        </div>
+
+        <div class="requirements">
+            <h3>Installation</h3>
+            <ul>
+                <li>Download the ZIP file</li>
+                <li>Extract to any folder</li>
+                <li>Run TaskApp.exe</li>
+                <li>Start organizing your tasks!</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>ashTaskApp © 2024 • Built with Qt & Care</p>
+        </footer>
+    </div>
+</body>
+</html>
